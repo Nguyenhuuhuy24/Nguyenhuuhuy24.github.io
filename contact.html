@@ -31,8 +31,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
 
 </head>
-<body data-spy="scroll" data-target="#navbar" class="static-layout">
-	<nav id="header-navbar" class="navbar navbar-expand-lg py-4">
+<body data-spy="scroll" data-target="#navbar-nav-header" class="static-layout">
+	<div class="boxed-page">
+		<nav id="header-navbar" class="navbar navbar-expand-lg py-4">
     <div class="container">
         <a class="navbar-brand d-flex align-items-center text-white" href="/">
             <h3 class="font-weight-bolder mb-0">Nguyễn Hữu Huy</h3>
@@ -47,6 +48,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="about.html">Giới thiệu</a>
+               
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">Liên hệ</a>
@@ -95,47 +97,101 @@
 		</form>
 	</div>
 	
-</div>	<div class="jumbotron d-flex align-items-center">
+</div>		<div class="jumbotron jumbotron-single d-flex align-items-center" style="background-image: url(img/bg.jpg)">
   <div class="container text-center">
-    <h1 class="display-1 mb-4">N<br>H<br>H</h1>
+    <h1 class="display-2 mb-4">Mọi thắc mắc xin vui lòng liên hệ</h1>
   </div>
-  <div class="rectangle-1"></div>
-  <div class="rectangle-2"></div>
-  <div class="rectangle-transparent-1"></div>
-  <div class="rectangle-transparent-2"></div>
-  <div class="circle-1"></div>
-  <div class="circle-2"></div>
-  <div class="circle-3"></div>
-  <div class="triangle triangle-1">
-  	<img src="img/obj_triangle.png" alt="">
-  </div>
-  <div class="triangle triangle-2">
-  	<img src="img/obj_triangle.png" alt="">
-  </div>
-  <div class="triangle triangle-3">
-  	<img src="img/obj_triangle.png" alt="">
-  </div>
-  <div class="triangle triangle-4">
-  	<img src="img/obj_triangle.png" alt="">
-  </div>
-</div>	<!-- Features Section-->
+</div>		<!-- Contact Form Section -->
+<section id="contact-form" class="bg-white">
+    <div class="container">
+        <div class="section-content">
+            <!-- Section Title -->
+            <div class="title-wrap" data-aos="fade-up">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-sub-title">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. <br> pharetra augue. Donec id elit non mi.</p>
+            </div>
+            <!-- End of Section Title -->
+            <div class="row">
+                <!-- Contact Form Holder -->
+                <div class="col-md-8 offset-md-2 contact-form-holder mt-4" data-aos="fade-up">
+                    <form method="post" name="contact-us" action="">
+                        <div class="row">
+                            <div class="col-md-12 form-group">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <input type="text" class="form-control" id="email" name="email" placeholder="Email">
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <input type="number" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Phone">
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <input type="text" class="form-control" id="websiteUrl" name="websiteUrl" placeholder="Website">
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <textarea class="form-control" id="message" name="message" rows="6" placeholder="Your Message ..."></textarea>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <button class="btn btn-primary btn-shadow btn-lg" type="submit" name="submit">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- End of Contact Form Holder -->
+            </div>
+        </div>
+        <div class="section-content pt-0">
+            <div class="title-wrap" data-aos="fade-up">
+                <h2 class="section-title">Where To Find Us?</h2>
+            </div>
+            <div class="row text-center mt-4">
+                <div class="col-md-3" data-aos="fade-up">
+                    <span class="lnr lnr-location fs-40 py-4 d-block"></span>
+                    <h5>LOCATION</h5>
+                    <p>Yogyakarta</p>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+                    <span class="lnr lnr-clock fs-40 py-4 d-block"></span>
+                    <h5>WORKING TIME</h5>
+                    <p>Monday - Saturday</p>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
+                    <span class="lnr lnr-phone fs-40 py-4 d-block"></span>
+                    <h5>CALL US</h5>
+                    <p>123-45678</p>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="600">
+                    <span class="lnr lnr-phone fs-40 py-4 d-block"></span>
+                    <h5>EMAIL</h5>
+                    <p>company@gmail.com</p>
+                </div>
 
             </div>
         </div>
-        
     </div>
 </section>
-<!-- End of Reservation Section -->	<!-- Features Section-->
-
-<!-- End of Features Section--></div>
-<footer class="mastfoot my-3">
+<!-- End of Contact Form Section -->		<!-- Features Section-->
+<section id="cta" class="bg-fixed overlay" style="background-image: url(img/bg.jpg);">
+    <div class="container">
+        <div class="section-content" data-aos="fade-up">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="mb-2">Make a beautiful website, or million of them</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, veritatis qui eligendi delectus quia fuga!</p>
+                    <a class="btn btn-outline-primary btn-lg">FEATURES</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of Features Section-->		<footer class="mastfoot my-3">
     <div class="inner container">
          <div class="row">
          	<div class="col-lg-4 col-md-12 d-flex align-items-center">
          		
          	</div>
          	<div class="col-lg-4 col-md-12 d-flex align-items-center">
-         		<p class="mx-auto text-center mb-0">&copy; 2022 NHH. Design by <a href="https://www.facebook.com/huy.nguyenhuu.1048" target="_blank">NguyenHuuHuy</a>.</p>
+         		<p class="mx-auto text-center mb-0">&copy; 2019 Roxy. Design by <a href="https://gettemplates.co" target="_blank">GetTemplates</a>.</p>
          	</div>
            
             <div class="col-lg-4 col-md-12">
@@ -160,7 +216,10 @@
             
         </div>
     </div>
-</footer>	<!-- External JS -->
+</footer>	</div>
+	
+</div>
+	<!-- External JS -->
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
 	<script src="vendor/bootstrap/popper.min.js"></script>
 	<script src="vendor/bootstrap/bootstrap.min.js"></script>
