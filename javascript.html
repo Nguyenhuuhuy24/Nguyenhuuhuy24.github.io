@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+    <html>
+           <head>
+          <title>Bài tập của Nguyễn Hữu Huy</title>
+          <link rel="icon" href="https://c8.alamy.com/comp/2HCR62W/cute-astronaut-riding-rocket-cartoon-vector-icon-illustration-science-technology-icon-concept-isolated-premium-vector-flat-cartoon-2HCR62W.jpg">
+          
+  <style>
+     @import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
+    body{
+      background-image: url(https://thietkewebso.com/upload/blog/2021/02/24/xu-huong-thiet-ke-web-2021-20210224152727-215738.gif);
+      background-repeat:  repeat-y;
+      background-size: 100% 100%;
+      text-align: center;
+      font-family: 'Fascinate', cursive;
+    }
+    h1{
+      text-align: center;
+      color: white;
+    }
+		#noidung{background: #07a1e9; height:250px; width:100%;color:#f00b0b; font-size:25px;
+              text-align: center;
+              border-radius: 20px;
+              
+    }
+		button{background:#CDC1B6;
+            margin-left:10px;
+            border-radius:10px ;
+            height: 45px;
+            display: inline;
+    }
+    
+	</style>
+           </head>
+           <body>
+            <h1>Bài tập JavaScript</h1>
+            <p id="noidung"></p>
+          <button type="button" onclick="hienthi()">Thông tin cá nhân </button>
+          <button type="button" onclick="tinhtong()">Tính tổng</button>     
+          <button type="button" onclick="tinhtongchan()">Tính tổng chẵn</button>
+            <script>
+              function hienthi() {
+	        // Giới thiệu tên
+  document.getElementById("noidung").innerHTML = "Nguyễn Hữu Huy";
+              }
+             function tinhtong() {
+          //Tính tổng từ 1 -> 10
+          let text =0;
+          for( let i=1 ; i<=10;i++){
+            text +=i;
+          }
+	document.getElementById("noidung").innerHTML =text ;
+              }
+            function tinhtongchan() {
+          //Tính tổng các số chẳn từ 1 -> 10
+          let text =0;
+          for( let i=1 ; i<=10;i++){
+            if(i%2==0){
+            text +=i;
+          }
+        }
+	document.getElementById("noidung").innerHTML =text ;
+              }
+            </script>    
+         </body>
+    </html>
